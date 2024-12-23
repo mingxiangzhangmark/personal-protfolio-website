@@ -1,5 +1,6 @@
 "use client";
 import { FC, ReactNode } from "react";
+// @ts-expect-error: react-water-wave does not have type definitions
 import WaterWave from "react-water-wave";
 
 interface WaterWveWrapperProps {
