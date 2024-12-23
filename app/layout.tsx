@@ -7,11 +7,11 @@ import GrainEffect from "@/components/visualEffects/GrainEffect";
 import Cursor from "@/components/cursor/Cursor";
 
 
-export const MainFront = Bricolage_Grotesque({
+const MainFront = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
-export const OswaldFront = Oswald({
+const OswaldFront = Oswald({
   subsets: ["latin"],
   variable: "--font-oswald",
 });
