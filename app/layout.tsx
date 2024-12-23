@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Oswald } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { cn } from "@/lib/util";
+import GrainEffect from "@/components/visualEffects/GrainEffect";
+import Cursor from "@/components/cursor/Cursor";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+export const MainFront = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const OswaldFront = Oswald({
   subsets: ["latin"],
+  variable: "--font-oswald",
 });
+
+const PixelFont = localFont({
+  src: "../public/assets/fonts/pixel-font-7.ttf",
+  variable: "--font-pixel",
+});
+
 
 export const metadata: Metadata = {
   title: "Mark's Portfolio",
@@ -37,12 +47,14 @@ export default function RootLayout({
     <html lang="en" >
      
       <head>
-        <link rel="icon" href="/icons8-computer-windows-11-color-96.png" type="image/png" />
+        <link rel="icon" href="/icons8-computer-windows-11-color-96.png" />
         <meta charSet="UTF-8" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(MainFront.className, OswaldFront.variable, PixelFont.variable)}
       >
+        <GrainEffect />
+        <Cursor color="#fff" />
         {children}
       </body>
     </html>
