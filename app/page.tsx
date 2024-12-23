@@ -1,16 +1,18 @@
 "use client";
 
+import WaterWaveWrapper from "@/components/visualEffects/WaterWaveWrapper";
+
 // import AboutSection from "@/sections/about";
 // import ContactSection from "@/sections/contact";
 // import FeaturedSection from "@/sections/featured";
 // import LandingSection from "@/sections/landing";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 // Dynamic import WaterWaveWrapper to ensure it's only used in the client-side environment
-const WaterWaveWrapper = dynamic(
-  () => import("@/components/visualEffects/WaterWaveWrapper"),
-  { ssr: false }
-);
+// const WaterWaveWrapper = dynamic(
+//   () => import("@/components/visualEffects/WaterWaveWrapper"),
+//   { ssr: false }
+// );
 
 export default function Home() {
   return (
