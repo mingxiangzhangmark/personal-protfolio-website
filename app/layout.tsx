@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Oswald } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import { cn } from "@/lib/util";
+import { cn } from "@/lib/utils";
 import GrainEffect from "@/components/visualEffects/GrainEffect";
 import Cursor from "@/components/cursor/Cursor";
 
