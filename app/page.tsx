@@ -27,7 +27,6 @@ export default function Home() {
         
 
           <LandingSection />
-          <LandingSection />
           {/* <FeaturedSection /> */}
           {/* <AboutSection /> */}
           {/* <ContactSection /> */}

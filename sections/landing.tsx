@@ -23,7 +23,7 @@ export default function LandingSection() {
       </div>
       {/*Slogan*/}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 leading-[14vw] lg:leading-[10vw] 2xl:leading-[9rem] font-medium h-[40rem] tracking-[-0.3rem]">
-        <div className="flex flex-col justify-center items-center text-primary-foreground text-[16vw] lg:text-[12vw] 2xl:text-[10rem] uppercase">
+        <div className="flex flex-col justify-center items-center text-primary-foreground text-[18vw] lg:text-[14vw] 2xl:text-[12rem] uppercase">
           <div>
             <span>Code</span>
           </div>
@@ -32,7 +32,7 @@ export default function LandingSection() {
           </div>
           <div className="relative">
             <span>Expertise</span>
-            <div className="text-[1rem] leading-[1.4rem]  tracking-[-0.07rem] absolute top-[14vw] lg:top-[10vw] 2xl:top-[9rem] left-0 2xl:left-[57rem] w-[30rem] uppercase font-normal">
+            <div className="text-[1.25rem] leading-[1.4rem]  tracking-[-0.07rem] absolute top-[14vw] lg:top-[10vw] 2xl:top-[9rem] left-0 2xl:left-[57rem] w-[30rem] uppercase font-normal">
               <span>Building solutions</span>
               <br />
               <span>through seamless coding</span>

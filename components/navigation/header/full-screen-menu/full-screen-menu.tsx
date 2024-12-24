@@ -15,9 +15,9 @@ export default function FullScreenMenu() {
       exit="exit"
       className="h-screen w-full bg-black fixed top-0 right-0 text-primary-foreground z-40 font-oswald"
     >
-      <div className="relative w-full pl-[5%]">
+      <div className="relative w-full pl-[1%]">
         {/*Profile*/}
-        <div className="absolute top-8">
+        <div className="absolute top-0">
           <Profile />
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function FullScreenMenu() {
           className="grid relative"
           style={{ gridTemplateColumns: "1fr 500px" }}
         >
-          <div className="pl-4 flex flex-col justify-end">
+          <div className="pl-4 ml-20  flex flex-col justify-end">
             {navItems.map((item, index) => (
               <NavLink key={index} data={{ ...item, index }} />
             ))}
@@ -38,20 +38,20 @@ export default function FullScreenMenu() {
       </div>
       {/*Footer links*/}
       <div className="w-[95%] pl-[5%] absolute bottom-8">
-        <div className="flex flex-wrap items-center justify-between uppercase text-white">
+        <div className="flex flex-wrap items-center justify-between uppercase text-white text-lg ">
           {/*----Left--------------*/}
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link href="/">LEGAL NOTICE</Link>
             <Link href="/">404</Link>
             <Link href="/">LEGALSTYLE</Link>
-          </div>
+          </div> */}
           {/*----Middle--------------*/}
-          <div className="flex items-center gap-4">
-            <Link href="/">LINKEDIN</Link>
-            <Link href="/">UDEMY</Link>
-            <Link href="/">YOUTUBE</Link>
-            <Link href="/">INSTAGRAM</Link>
-            <Link href="/">TWITTER</Link>
+          <div className="flex items-center gap-4 ">
+            <Link className="hover:underline" href="/">LINKEDIN</Link>
+            <Link className="hover:underline" href="/">GITHUB</Link>
+            <Link className="hover:underline" href="/">FACEBOOK</Link>
+            <Link className="hover:underline" href="/">DISCORD</Link>
+            <Link className="hover:underline" href="/">WHATSAPP</Link>
           </div>
           {/*----rIGHT--------------*/}
           <div className="flex items-center gap-4">

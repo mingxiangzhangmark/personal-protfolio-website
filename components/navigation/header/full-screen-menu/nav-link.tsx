@@ -23,6 +23,7 @@ const NavLink: FC<NavLinkProps> = ({ data }) => {
       exit="exit"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      
     >
       <motion.div
         variants={scale}

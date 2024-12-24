@@ -8,7 +8,7 @@ export default function MenuCard() {
       {/*Header*/}
       <div className="w-full flex relative justify-between items-center">
         <div className="uppercase font-bold text-2xl text-white">
-          Who is MOHAMED ?
+          Who is Mark?
         </div>
         <HeadingAnimatedSvg animated text="LEARN MORE ABOUT MOHAMED HAJJI" />
       </div>
