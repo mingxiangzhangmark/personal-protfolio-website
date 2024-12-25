@@ -2,7 +2,7 @@
 
 // import AboutSection from "@/sections/about";
 // import ContactSection from "@/sections/contact";
-// import FeaturedSection from "@/sections/featured";
+import FeaturedSection from "@/sections/featured";
 import LandingSection from "@/sections/landing";
 import dynamic from "next/dynamic";
 
@@ -27,7 +27,7 @@ export default function Home() {
         
 
           <LandingSection />
-          {/* <FeaturedSection /> */}
+          <FeaturedSection/>
           {/* <AboutSection /> */}
           {/* <ContactSection /> */}
         </div>
