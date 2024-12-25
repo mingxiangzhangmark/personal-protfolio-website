@@ -4,7 +4,7 @@ import Heading from "@/components/heading/heading";
 
 import { featuredData } from "@/data";
 
-const MainFeatured = featuredData[0];
+const MainFeatured = featuredData[0]; 
 
 export default function FeaturedSection() {
   return (
@@ -17,6 +17,7 @@ export default function FeaturedSection() {
         title={MainFeatured.title}
         tag={MainFeatured.tag}
         video={MainFeatured.video}
+        link={MainFeatured.link}
       />
       <div className="mt-24">
         <ExpandableFeatured />

@@ -8,11 +8,13 @@ interface FeaturedCardProps {
   tag: string;
   video: string;
   active: boolean;
+  link: string;
 }
 
 const FeaturedCard: FC<FeaturedCardProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   logo,
+  link,
   title,
   tag,
   video,
@@ -21,7 +23,7 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
   return (
     <div className="link w-full h-full bg-secondary-background border border-border shadow-lg  rounded-3xl cursor-pointer flex flex-col gap-2 flex-nowrap p-2">
       {/*Header*/}
-      <Header title={title} tag={tag} />
+      <Header title={title} tag={tag} link = {link}/>
       {/*Body*/}
       <div className="relative flex float-none flex-nowrap p-6 w-full items-center justify-center h-[550px] border border-border rounded-3xl">
         {/*Video*/}

@@ -14,7 +14,7 @@ const featuredData = [
   {
     title: "weather Search App",
     logo: "",
-    tag: "Jan 2024",
+    tag: "June 2024",
     video:
       // "https://cdn.dribbble.com/userupload/13004443/file/original-abd310aef7e5503eb49ec96040be757d.mp4",
       "https://cdn.dribbble.com/userupload/18150124/file/original-d9ad3db8e12fe99712e0bd27aa59c593.mp4",
@@ -31,13 +31,13 @@ const featuredData = [
     link: "https://dribbble.com/shots/23623908-Frontline-Creative-Studio-Website",
   },
   {
-    title: "Cyborg League Arena",
+    title: "Mark's Blog",
     logo: "",
-    tag: "Jan 2022",
+    tag: "December 2024",
     video:
-      "https://cdn.dribbble.com/userupload/12878467/file/original-ed8b35e23f89e36d2aaaab37fc965808.mp4",
-    credits: "Sok Studio",
-    link: "https://dribbble.com/shots/23582749-Cyborg-League-Arena-Mobile-Game-Landing-Page",
+      "https://cdn.dribbble.com/userupload/18150705/file/original-80ddaaf9b71600ed7c64f8123e1da6db.mp4",
+    credits: "Mingxiang Zhang",
+    link: "https://mark-blog-mern.onrender.com/",
   },
 ];
 

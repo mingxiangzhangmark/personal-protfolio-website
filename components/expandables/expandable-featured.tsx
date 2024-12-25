@@ -30,6 +30,7 @@ export default function ExpandableFeatured() {
             title={featured.title}
             tag={featured.tag}
             video={featured.video}
+            link={featured.link}
           />
         </div>
       ))}
