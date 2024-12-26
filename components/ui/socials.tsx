@@ -1,7 +1,7 @@
 import Button from "./button";
 import { SiUdemy } from "react-icons/si";
-import { RiYoutubeFill } from "react-icons/ri";
-import { FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn} from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 export default function Socials() {
   return (
@@ -16,24 +16,26 @@ export default function Socials() {
 }
 
 const socials = [
-  {
-    icon: <SiUdemy className="w-4 h-4" />,
-    link: "https://www.udemy.com/user/mohamed-hajji-25",
-    username: "Mohmed Hajji",
-  },
-  {
-    icon: <RiYoutubeFill className="w-5 h-5" />,
-    link: "https://www.youtube.com/channel/UC-w5hcIcVX5IzP8537CYSBg",
-    username: "Dev7",
+{
+    icon: <FaGithub className="w-5 h-5" />,
+    link: "https://github.com/mingxiangzhangmark",
+    username: "mingxiangzhangmark",
   },
   {
     icon: <FaLinkedinIn className="w-5 h-5" />,
-    link: "https://www.linkedin.com/in/medhajji/",
-    username: "Mohamed HAJJI",
+    link: "https://www.linkedin.com/in/mingxiang-zhang-04b3722b7/",
+    username: "Mingxiang (Mark) Zhang",
   },
   {
-    icon: <FaInstagram className="w-5 h-5" />,
-    link: "https://www.instagram.com/med_hajji7/",
-    username: "Mohamed HAJJI",
+    icon: <SiUdemy className="w-4 h-4" />,
+    link: "https://www.udemy.com/user/mingxiangzhang/",
+    username: "Mingxiang Zhang",
   },
+  
+  
+  // {
+  //   icon: <FaInstagram className="w-5 h-5" />,
+  //   link: "https://www.instagram.com/med_hajji7/",
+  //   username: "Mohamed HAJJI",
+  // },
 ];

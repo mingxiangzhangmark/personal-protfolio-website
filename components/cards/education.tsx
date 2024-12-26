@@ -21,13 +21,13 @@ export default function EducationCard() {
 }
 const EducationsData = [
   {
-    date: "2017 — 2020",
-    title: "Math & Computer science major",
-    subTitle: "FPL",
+    date: "2024-2026",
+    title: "Master's degree in Software Engineering",
+    subTitle: "University of Sydney",
   },
   {
-    date: "2012 — 2016",
-    title: "Maths baccalaureate",
-    subTitle: "Errachidi school",
+    date: "2017 - 2021",
+    title: "Bachelor's degree in Engineering",
+    subTitle: "XI'AN CHINA",
   },
 ];

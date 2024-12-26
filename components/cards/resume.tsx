@@ -9,26 +9,23 @@ export default function ResumeCard() {
   return (
     <Card className="md:h-full ">
       <p className="text-lg xl:text-2xl font-medium text-primary-foreground">
-        Online instructor and your web wizard and digital handyman. Armed with 5
-        years of tinkering in the full-stack playground, I&apos;ve got a toolbox
-        that&apos;s overflowing with front-end sparkles and back-end muscle. Add
-        a dash of AI cleverness and a lock-tight dedication to web security, and
-        you&apos;ve got a recipe for online awesomeness. Ready for a little
-        internet enchantment? Let&apos;s make your web dreams a screen reality!
-        🚀🖥
+      Graduate student at the University of Sydney, pursuing a Master&apos;s in Software Engineering, and a passionate full-stack developer. Armed with a portfolio of innovative projects, I thrive at the crossroads of creativity and technology. With a sharp eye for AI-powered solutions and a knack for mastering new skills quickly, I bring a relentless drive for learning and growth to every challenge. Whether it’s crafting intuitive front-end designs or engineering robust back-end systems, I deliver with both precision and empathy. Ready to collaborate and create the future? Let’s innovate, inspire, and make the digital world a friendlier place! 🚀🌏
       </p>
       {/*Signature*/}
       <div>
-        <Image src={SignatureImg} alt="mohamed hajji" />
+        <Image src={SignatureImg} alt="Mark" />
       </div>
       {/*Socials and resume btn*/}
       <div className="flex items-center justify-between md:absolute md:bottom-6 md:left-6 md:w-[calc(100%-48px)]">
         {/*Socials*/}
         <Socials />
-        <Button>
-          <FaDownload />
-          Resume
-        </Button>
+        <a href="/resume_test.pdf" download="mark-zhang-resume.pdf">
+          <Button>
+            <FaDownload />
+            Resume
+          </Button>
+        </a>
+        
       </div>
     </Card>
   );

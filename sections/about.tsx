@@ -2,7 +2,7 @@ import BackgroundCard from "@/components/cards/background";
 import CertificationsCard from "@/components/cards/certifications";
 import EducationCard from "@/components/cards/education";
 import ExperienceCard from "@/components/cards/experience";
-import InstructorCard from "@/components/cards/instructor";
+// import InstructorCard from "@/components/cards/instructor";
 import MeCard from "@/components/cards/me";
 import ResumeCard from "@/components/cards/resume";
 import StackCard from "@/components/cards/stack";
@@ -26,12 +26,13 @@ export default function AboutSection() {
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <div className="space-y-4">
-            <InstructorCard />
+            {/* <InstructorCard /> */}
+            <ExperienceCard />
             <CertificationsCard />
           </div>
           <div className="space-y-4">
             <StackCard />
-            <ExperienceCard />
+            {/* <ExperienceCard /> */}
             <EducationCard />
           </div>
           <div className="hidden 2xl:flex">

@@ -2,9 +2,9 @@ import NextJsImg from "@/public/assets/images/stack/nextjs.png";
 import ReactJsImg from "@/public/assets/images/stack/reactjs.png";
 import NodeJsImg from "@/public/assets/images/stack/nodejs.png";
 import ExpressJsImg from "@/public/assets/images/stack/expressjs.png";
-import FramerMotionImg from "@/public/assets/images/stack/framer-motion.png";
-import GsapImg from "@/public/assets/images/stack/gsap.png";
-import NxImg from "@/public/assets/images/stack/nx.png";
+// import FramerMotionImg from "@/public/assets/images/stack/framer-motion.png";
+// import GsapImg from "@/public/assets/images/stack/gsap.png";
+// import NxImg from "@/public/assets/images/stack/nx.png";
 import JavascriptImg from "@/public/assets/images/stack/js.png";
 import TypescriptImg from "@/public/assets/images/stack/ts.png";
 import TailwindImg from "@/public/assets/images/stack/tailwind.png";
@@ -14,7 +14,7 @@ import SvelteImg from "@/public/assets/images/stack/svelte.png";
 import SassImg from "@/public/assets/images/stack/sass.png";
 import ShadcnUiImg from "@/public/assets/images/stack/shadcnui.png";
 import MaterialUiImg from "@/public/assets/images/stack/materialui.png";
-import DaisyUiImg from "@/public/assets/images/stack/daisyui.png";
+// import DaisyUiImg from "@/public/assets/images/stack/daisyui.png";
 import FastifyPng from "@/public/assets/images/stack/fastify.png";
 import NestJsImg from "@/public/assets/images/stack/nestjs.jpg";
 
@@ -49,7 +49,7 @@ export const stackData = [
     ],
   },
   {
-    title: "Frontend FWs",
+    title: "Frontend",
     stack: [
       {
         id: 0,
@@ -72,7 +72,7 @@ export const stackData = [
     ],
   },
   {
-    title: "Styling / FWs",
+    title: "Styling ",
     stack: [
       {
         id: 0,
@@ -98,33 +98,33 @@ export const stackData = [
         image: MaterialUiImg,
         bgColor: "",
       },
-      {
-        id: 4,
-        title: "Daisy ui",
-        image: DaisyUiImg,
-        bgColor: "",
-      },
+      // {
+      //   id: 4,
+      //   title: "Daisy ui",
+      //   image: DaisyUiImg,
+      //   bgColor: "",
+      // },
     ],
   },
+  // {
+  //   title: "Aimation",
+  //   stack: [
+  //     {
+  //       id: 0,
+  //       title: "Framer motion",
+  //       image: FramerMotionImg,
+  //       bgColor: "",
+  //     },
+  //     {
+  //       id: 1,
+  //       title: "Gsap",
+  //       image: GsapImg,
+  //       bgColor: "",
+  //     },
+  //   ],
+  // },
   {
-    title: "Aimation",
-    stack: [
-      {
-        id: 0,
-        title: "Framer motion",
-        image: FramerMotionImg,
-        bgColor: "",
-      },
-      {
-        id: 1,
-        title: "Gsap",
-        image: GsapImg,
-        bgColor: "",
-      },
-    ],
-  },
-  {
-    title: "Backend / FWs",
+    title: "Backend ",
     stack: [
       {
         id: 0,
@@ -152,15 +152,15 @@ export const stackData = [
       },
     ],
   },
-  {
-    title: "Monorepoos",
-    stack: [
-      {
-        id: 0,
-        title: "NX Monorepoo",
-        image: NxImg,
-        bgColor: "#f5f5f5",
-      },
-    ],
-  },
+  // {
+  //   title: "Monorepoos",
+  //   stack: [
+  //     {
+  //       id: 0,
+  //       title: "NX Monorepoo",
+  //       image: NxImg,
+  //       bgColor: "#f5f5f5",
+  //     },
+  //   ],
+  // },
 ];

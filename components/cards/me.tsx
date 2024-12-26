@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Card from "../ui/card";
-import MyImg from "@/public/assets/images/gallery/img-3.jpg";
+import MyImg from "@/public/assets/images/gallery/img-1.jpg";
 import { cn } from "@/lib/utils";
 export default function MeCard() {
   return (
@@ -19,14 +19,14 @@ export default function MeCard() {
             className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl"
           />
           <Tag
-            text="I'm MOHAMED HAJJI"
+            text="I'm MARK"
             className="rounded-tr-2xl rounded-br-2xl rounded-bl-2xl"
           />
           <Tag
             text="Full stack developer"
             className="rounded-tl-2xl rounded-tr-xl rounded-br-2xl rounded-bl-2xl"
           />
-          <Tag text="Online instructor" className="rounded-3xl" />
+          <Tag text="Turning ideas into reality with code" className="rounded-3xl" />
         </div>
       </div>
     </Card>
