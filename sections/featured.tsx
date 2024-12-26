@@ -10,7 +10,7 @@ export default function FeaturedSection() {
   const firstExpandableData = featuredData.slice(1, 4); // 第 2-4 项
   // const secondExpandableData = featuredData.slice(4, 7); // 第 5-7 项
   return (
-    <div className="pt-24 px-3 lg:px-8">
+    <div id="projects" className="pt-24 px-3 lg:px-8">
       {/*Heading*/}
       <Heading number="01" title_1="Featured" title_2="Work" />
       {/*Main Featured Card*/}

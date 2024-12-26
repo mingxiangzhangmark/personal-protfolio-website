@@ -4,13 +4,13 @@ import Link from "next/link";
 import ShadeImg from "@/public/assets/images/background/card-shade.png";
 export default function MenuCard() {
   return (
-    <div className="w-full h-auto min-h-[427px] gap-[70px] bg-[#1e36ea] rounded-[10px] flex-col justify-between items-start flex relative overflow-hidden pt-10 px-[25px] pb-5 shadow-md">
+    <div className="w-full h-auto min-h-[427px] gap-[45px] bg-[#1e36ea] rounded-[10px] flex-col justify-between items-start flex relative overflow-hidden pt-10  px-[25px] pb-5 shadow-md">
       {/*Header*/}
-      <div className="w-full flex relative justify-between items-center">
-        <div className="uppercase font-bold text-2xl text-white">
+      <div className="w-full flex relative justify-between items-center ">
+        <div className="uppercase font-bold text-2xl text-white ">
           Who is Mark?
         </div>
-        <HeadingAnimatedSvg animated text="LEARN MORE ABOUT MOHAMED HAJJI" />
+        <HeadingAnimatedSvg animated text="LEARN MORE ABOUT MARK ZHANG" />
       </div>
       {/*Menu*/}
       <div className="z-40 w-full flex flex-col gap-y-[5px] justify-center items-start relative">
@@ -41,30 +41,26 @@ const myLinks = [
   },
   {
     title: "Background",
-    link: "#about",
-  },
-  {
-    title: "Courses",
-    link: "#about",
+    link: "#background",
   },
   {
     title: "EXPERIENCE",
-    link: "#about",
+    link: "#experience",
   },
   {
     title: "EDUCATION",
-    link: "#about",
+    link: "#education",
   },
   {
     title: "CERTIFICATIONS",
-    link: "#about",
+    link: "#certifications",
   },
   {
     title: "TECH STACK",
-    link: "#about",
+    link: "#stack",
   },
   {
     title: "Gallery",
-    link: "#about",
+    link: "#gallery",
   },
 ];

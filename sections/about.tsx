@@ -13,27 +13,41 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <div className="pt-24 px-3 lg:px-8">
+    <div id="about" className="pt-24 px-3 lg:px-8">
       <Heading number="02" title_1="About" title_2="Me" />
       <div className="space-y-4 py-8">
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <MeCard />
           <ResumeCard />
-          <BackgroundCard />
-          <div className="2xl:hidden">
+          <div id="background">
+            <BackgroundCard />
+          </div>
+
+          <div id="gallery" className="2xl:hidden">
             <Gallery/>
           </div>
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <div className="space-y-4">
             {/* <InstructorCard /> */}
-            <ExperienceCard />
-            <CertificationsCard />
+            <div id="experience">
+             <ExperienceCard /> 
+            </div>
+            <div id="certifications">
+              <CertificationsCard />
+            </div>
+
           </div>
-          <div className="space-y-4">
-            <StackCard />
-            {/* <ExperienceCard /> */}
-            <EducationCard />
+          < div className="space-y-4">
+            <div id="stack">
+              <StackCard />
+            </div>
+            
+          
+            <div id="education">
+              <EducationCard />
+            </div>
+
           </div>
           <div className="hidden 2xl:flex">
             <Gallery />

@@ -5,6 +5,7 @@ import ContactSection from "@/sections/contact";
 import FeaturedSection from "@/sections/featured";
 import LandingSection from "@/sections/landing";
 import dynamic from "next/dynamic";
+// import Link from "next/link";
 
 
 
@@ -26,10 +27,15 @@ export default function Home() {
         <div className="pb-8">
         
 
-          <LandingSection />
-          <FeaturedSection/>
+          <LandingSection  />
+          <FeaturedSection />
           <AboutSection />
           <ContactSection />
+          {/* <Link className="text-center block text-blue-500 text-lg font-bold mt-10" href="#about">
+            
+            About
+            
+          </Link> */}
         </div>
       )}
     </WaterWaveWrapper>

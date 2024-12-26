@@ -47,9 +47,9 @@ export default function FullScreenMenu() {
           </div> */}
           {/*----Middle--------------*/}
           <div className="flex items-center gap-4 ">
-            <Link className="hover:underline" href="/">LINKEDIN</Link>
-            <Link className="hover:underline" href="/">GITHUB</Link>
-            <Link className="hover:underline" href="/">FACEBOOK</Link>
+            <Link className="hover:underline" href="https://www.linkedin.com/in/mingxiang-zhang-04b3722b7/">LINKEDIN</Link>
+            <Link className="hover:underline" href="https://github.com/mingxiangzhangmark">GITHUB</Link>
+            <Link className="hover:underline" href="https://www.facebook.com/profile.php?id=61556346444234">FACEBOOK</Link>
             <Link className="hover:underline" href="/">DISCORD</Link>
             <Link className="hover:underline" href="/">WHATSAPP</Link>
           </div>
@@ -68,22 +68,19 @@ export default function FullScreenMenu() {
 const navItems = [
   {
     title: "Home",
-    href: "/",
-  },
-  {
-    title: "Featured",
-    href: "/#featured",
-  },
-  {
-    title: "About",
-    href: "/#about",
+    href: "#home",
   },
   {
     title: "Projects",
-    href: "/#projects",
+    href: "#projects",
   },
   {
+    title: "About",
+    href: "#about",
+  },
+  
+  {
     title: "Contact",
-    href: "/#contact",
+    href: "#contact",
   },
 ];
