@@ -7,6 +7,8 @@ import { featuredData } from "@/data";
 const MainFeatured = featuredData[0]; 
 
 export default function FeaturedSection() {
+  const firstExpandableData = featuredData.slice(1, 4); // 第 2-4 项
+  // const secondExpandableData = featuredData.slice(4, 7); // 第 5-7 项
   return (
     <div className="pt-24 px-3 lg:px-8">
       {/*Heading*/}
@@ -20,7 +22,9 @@ export default function FeaturedSection() {
         link={MainFeatured.link}
       />
       <div className="mt-24">
-        <ExpandableFeatured />
+        <ExpandableFeatured data={firstExpandableData}/>
+        {/*if you want to add more expandable section, you can uncomment the code below*/}
+        {/* <ExpandableFeatured data={secondExpandableData}/> */}
       </div>
     </div>
   );
