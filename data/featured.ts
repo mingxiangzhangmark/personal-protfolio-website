@@ -30,7 +30,7 @@ const featuredData = [
       "https://cdn.dribbble.com/userupload/18151489/file/original-fdabd8716af7954a148659607d827841.mp4",
     credits: "Mingxiang zhang",
     link: "https://neighbour-link-car-sharing-website.vercel.app/",
-  },
+  }, 
   {
     title: "Mark's Blog",
     logo: "",

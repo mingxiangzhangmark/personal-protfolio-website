@@ -42,7 +42,7 @@ const SelectInput: FC<SelectInputProps> = ({
         className="w-[15px] h-[15px] !rounded-xl !bg-transparent"
       />
       <label htmlFor={id}>{text}</label>
-    </div>
+    </div> 
   );
 };
 
