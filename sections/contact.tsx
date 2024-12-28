@@ -30,10 +30,10 @@ export default function ContactSection() {
 
     emailjs
       .sendForm(
-        "service_33mekm8",
-        "template_urts89y",
+        "service_yvqzhsi",
+        "template_b45ug3f",
         formRef.current,
-        "TfAuwcTgpMuTffJyH"
+        "VSCFN1wFRyGiY-Lc_"
       )
       .then(
         (res) => {
@@ -44,6 +44,13 @@ export default function ContactSection() {
           console.log(error.text);
         }
       );
+  };
+  const handleCall = () => {
+    window.location.href = "tel:+610423021196"; // Opens phone dialer
+  };
+
+  const handleEmail = () => {
+    window.location.href = "mailto:mingxiangzhang_mark@outlook.com"; // Opens email client
   };
 
   return (
@@ -58,12 +65,14 @@ export default function ContactSection() {
               icon={<FaPhoneVolume className="fill-[#333] text-lg" />}
               text="+61 0423021196"
               btnText="Call Me"
+              action={handleCall}
             />
             <ContactCard
               title="Chat with me"
               icon={<MdEmail className="fill-[#333] text-base " />}
               text="mingxiangzhang_mark @outlook.com"
               btnText="Email me"
+              action={handleEmail}
             />
           </div>
           {/*Contact form*/}

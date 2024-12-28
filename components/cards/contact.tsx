@@ -6,9 +6,10 @@ interface ContactCardProps {
   icon: ReactNode;
   text: string;
   btnText: string;
+  action: () => void;
 }
 
-const ContactCard: FC<ContactCardProps> = ({ icon, btnText, text, title }) => {
+const ContactCard: FC<ContactCardProps> = ({ icon, btnText, text, title, action }) => {
   return (
     <div
       className="bg-secondary-background border border-border rounded-lg
@@ -26,7 +27,7 @@ const ContactCard: FC<ContactCardProps> = ({ icon, btnText, text, title }) => {
         <div>
           <h2 className="font-bold text-2xl break-words whitespace-normal">{text}</h2>
         </div>
-        <Button className="!w-24">{btnText}</Button>
+        <Button className="!w-24" onClick={action}>{btnText}</Button>
       </div>
     </div>
   );
