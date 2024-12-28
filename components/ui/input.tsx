@@ -5,9 +5,10 @@ interface InputProps {
   placeholder: string;
   type: "email" | "text" | "password";
   name: string;
+  required?: boolean;
 }
 
-const Input: FC<InputProps> = ({ icon, placeholder, type, name }) => {
+const Input: FC<InputProps> = ({ icon, placeholder, type, name, required }) => {
   return (
     <div className="relative w-full">
       {/*Icon*/}
@@ -15,6 +16,7 @@ const Input: FC<InputProps> = ({ icon, placeholder, type, name }) => {
         {icon}
       </div>
       <input
+        required={required}
         type={type}
         name={name}
         placeholder={placeholder}

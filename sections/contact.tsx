@@ -10,24 +10,19 @@ import { MdEmail, MdSubject } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 import SelectInput from "@/components/ui/select-input";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null!);
   const btnRef = useRef<HTMLButtonElement>(null);
-
+  // const [emailStatus, setEmailStatus] = useState<boolean>(false);
   const [services, setServices] = useState<string[]>([]);
 
-  // const [budgets, setBudgets] = useState<string[]>([]);
+  const notify = () => toast('Email sent successfully');
 
   const sendEmail = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    // interface EmailJSResponseStatus {
-    //   text: string;
-    // }
-
-    // interface EmailJSError {
-    //   text: string;
-    // }
-
     emailjs
       .sendForm(
         "service_yvqzhsi",
@@ -39,11 +34,13 @@ export default function ContactSection() {
         (res) => {
           console.log(res.text);
           console.log("Email sent successfully");
+          // setEmailStatus(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
+      // setEmailStatus(false);
   };
   const handleCall = () => {
     window.location.href = "tel:+610423021196"; // Opens phone dialer
@@ -83,12 +80,14 @@ export default function ContactSection() {
           >
             <div className="flex flex-col lg:flex-row items-center justify-between mb-4 gap-8">
               <Input
+                required={true}
                 name="name"
                 type="text"
                 placeholder="Your Name"
                 icon={<FaUser />}
               />
               <Input
+                required={true}
                 type="email"
                 name="email"
                 placeholder="Email Address"
@@ -151,9 +150,26 @@ export default function ContactSection() {
             />
             <div className="w-full flex justify-end">
               <div onClick={() => btnRef.current?.click()}>
-                <Button className="!w-44 !py-3 !text-xl">
-                  Send <SiMinutemailer />
+                <Button className="!w-44 !py-3 !text-xl" onClick={notify}>
+                  Send<SiMinutemailer />
                 </Button>
+                {/*Toast notification*/}
+                
+                  <ToastContainer  
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover={false}
+                    theme="dark"
+                    // transition={Bounce}
+                  />
+                
+                
               </div>
               {/*Hidden services and budget inputs*/}
               <div className="hidden">
@@ -170,7 +186,9 @@ export default function ContactSection() {
                   hidden
                 /> */}
               </div>
-              <button type="submit" hidden ref={btnRef}></button>
+              <button type="submit" hidden ref={btnRef} >
+
+              </button>
             </div>
           </form>
         </div>

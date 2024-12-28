@@ -5,6 +5,7 @@ import ContactSection from "@/sections/contact";
 import FeaturedSection from "@/sections/featured";
 import LandingSection from "@/sections/landing";
 import dynamic from "next/dynamic";
+import 'react-toastify/dist/ReactToastify.css';
 // import Link from "next/link";
 
 
