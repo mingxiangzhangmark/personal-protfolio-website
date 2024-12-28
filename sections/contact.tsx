@@ -16,10 +16,12 @@ import "react-toastify/dist/ReactToastify.css";
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null!);
   const btnRef = useRef<HTMLButtonElement>(null);
-  // const [emailStatus, setEmailStatus] = useState<boolean>(false);
+  // const [showToast, setShowToast] = useState(false);
   const [services, setServices] = useState<string[]>([]);
 
-  const notify = () => toast('Email sent successfully');
+  // const notify = () => {
+  //   toast('Email sent successfully');
+  //  } 
 
   const sendEmail = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -34,13 +36,14 @@ export default function ContactSection() {
         (res) => {
           console.log(res.text);
           console.log("Email sent successfully");
-          // setEmailStatus(true);
+          toast.success("Email sent successfully!");
         },
         (error) => {
           console.log(error.text);
+          toast.error("Failed to send email."); // Show error toast
         }
       );
-      // setEmailStatus(false);
+      
   };
   const handleCall = () => {
     window.location.href = "tel:+610423021196"; // Opens phone dialer
@@ -150,11 +153,12 @@ export default function ContactSection() {
             />
             <div className="w-full flex justify-end">
               <div onClick={() => btnRef.current?.click()}>
-                <Button className="!w-44 !py-3 !text-xl" onClick={notify}>
+                <Button className="!w-44 !py-3 !text-xl" >
                   Send<SiMinutemailer />
                 </Button>
-                {/*Toast notification*/}
-                
+              </div>
+               {/*Toast notification*/}
+               {/* {showToast && ( */}
                   <ToastContainer  
                     position="top-center"
                     autoClose={5000}
@@ -168,9 +172,7 @@ export default function ContactSection() {
                     theme="dark"
                     // transition={Bounce}
                   />
-                
-                
-              </div>
+                {/* )} */}
               {/*Hidden services and budget inputs*/}
               <div className="hidden">
                 <input
