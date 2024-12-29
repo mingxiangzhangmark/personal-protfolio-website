@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a next.js + typescript portfolio website. It is a simple, clean, and responsive website that can be used to showcase my projects and skills. It is easy to customize and deploy.
+
+
+## Live Demo
+https://mark-personal-protfolio-website.vercel.app/
+
+## Technologies Used
+- Next.js
+- TypeScript
+- ESLint
+- React.js
+- Tailwind CSS
+- Vercel
 
 ## Getting Started
 
