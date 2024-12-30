@@ -7,6 +7,7 @@ import LandingSection from "@/sections/landing";
 import dynamic from "next/dynamic";
 import 'react-toastify/dist/ReactToastify.css';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 // import Link from "next/link";
 
 
@@ -43,6 +44,7 @@ export default function Home() {
       )}
     </WaterWaveWrapper>
      <Analytics />
+     <SpeedInsights />
     </div>
     
   );
