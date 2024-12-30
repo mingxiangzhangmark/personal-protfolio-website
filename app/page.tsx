@@ -6,6 +6,7 @@ import FeaturedSection from "@/sections/featured";
 import LandingSection from "@/sections/landing";
 import dynamic from "next/dynamic";
 import 'react-toastify/dist/ReactToastify.css';
+import { Analytics } from '@vercel/analytics/next';
 // import Link from "next/link";
 
 
@@ -18,7 +19,8 @@ const WaterWaveWrapper = dynamic(
 
 export default function Home() {
   return (
-    <WaterWaveWrapper
+    <div>
+      <WaterWaveWrapper
       imageUrl=""
       dropRadius="3"
       perturbance="5"
@@ -40,5 +42,8 @@ export default function Home() {
         </div>
       )}
     </WaterWaveWrapper>
+     <Analytics />
+    </div>
+    
   );
 }
