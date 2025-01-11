@@ -23,17 +23,17 @@ export default function ExperienceCard() {
 }
 const experiencesData = [
   {
-    date: "2022 — Now",
-    title: "Teacher and instructor",
-    subTitle: "Udemy",
-    link: "https://www.udemy.com/user/mohamed-hajji-25",
-    tag: "Remote",
+    date: "2021 — 2023",
+    title: "Teacher and Tutor",
+    subTitle: "English",
+    link: "/",
+    tag: "Beijing, China",
   },
   {
-    date: "2020 — 2021",
-    title: "React js full stack developer",
-    subTitle: "Toptal",
-    link: "https://www.toptal.com/",
+    date: "2025",
+    title: "React js full stack developer internship",
+    subTitle: "None",
+    link: "/",
     tag: "Remote",
   },
 ];
